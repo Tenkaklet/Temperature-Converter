@@ -18,7 +18,8 @@ fn main() {
 
         let t_number: i32 = t_number.trim().parse().expect("Expected a number");
         let res: i32 = convert_c(t_number);
-        println!("The temperature is: {res}");
+        println!("The temperature is: {res} Fahrenheit.");
+        println!("Enough questions. Terminating program.");
     } else {
         println!("Input a temperature number:");
         io::stdin()
@@ -27,7 +28,8 @@ fn main() {
 
         let t_number: i32 = t_number.trim().parse().expect("Expected a number");
         let res = convert_f(t_number);
-        println!("The temperature is: {res}");
+        println!("The temperature is: {res} Celcius");
+        println!("Enough questions. Terminating program.");
     }
 }
 
